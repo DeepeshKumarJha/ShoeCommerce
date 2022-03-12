@@ -12,7 +12,7 @@ const Product = (props) => {
 				<p>{props.product.about}</p>
 				<span>{props.product.price}</span>
 				<p className='shoes-size'>
-					Size : {props.product.size.join(",")}
+					Size : {props.product.size.join(", ")}
 				</p>
 			</div>
 		</>
