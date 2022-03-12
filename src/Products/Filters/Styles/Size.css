@@ -1,0 +1,69 @@
+.size-heading {
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgb(196, 195, 195);
+}
+
+.size-heading > span:first-child {
+	font-size: 1.2rem;
+	font-weight: 200;
+	margin-left: 10px;
+}
+
+.size-btn {
+	margin-right: 10px;
+	cursor: pointer;
+	font-weight: 300;
+	color: grey;
+}
+
+.size-drop-down {
+	padding: 0 20px;
+	border-bottom: 1px solid rgb(196, 195, 195);
+	/* this is all for animation */
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.size-drop-down div {
+	display: inline-block;
+}
+.show-size-drop {
+	padding: 20px 20px;
+	height: 100%;
+	overflow: scroll;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.size-drop-down input[type="checkbox"]:checked,
+.size-drop-down input[type="checkbox"]:not(:checked) {
+	display: none;
+}
+
+.size-drop-down input[type="checkbox"] + label {
+	height: 30px;
+	width: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	border: 1px solid grey;
+	border-radius: 4px;
+}
+
+.size-drop-down input[type="checkbox"]:checked + label {
+	height: 30px;
+	width: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid grey;
+	background: black;
+	color: white;
+	border-radius: 4px;
+}

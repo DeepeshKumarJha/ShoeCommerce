@@ -1,0 +1,38 @@
+.product-container {
+	position: relative;
+	height: 533px;
+	width: 348px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.shoes-size {
+	position: absolute;
+	bottom: 50px;
+}
+
+.product-image-section {
+	height: 348px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.product-image-section img {
+	display: block;
+	width: 100%;
+}
+
+.product-container h3 {
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+.product-container p {
+	opacity: 0.5;
+}
+
+.product-container span::before {
+	content: "₹";
+	margin-right: 3px;
+}

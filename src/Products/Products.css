@@ -1,0 +1,29 @@
+.products-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1280px) {
+	.filter-and-product-container {
+		display: flex;
+		height: calc(100vh - 60px);
+	}
+	.filter-container {
+		height: 100%;
+		min-width: 250px;
+		border-right: 1px solid rgb(196, 195, 195);
+	}
+	.products-container {
+		max-height: calc(100vh - 60px);
+		width: 100%;
+		overflow: scroll;
+		justify-content: space-around;
+	}
+}
